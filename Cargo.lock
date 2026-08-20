@@ -110,6 +110,25 @@ dependencies = [
 ]
 
 [[package]]
+name = "axum-tracing-opentelemetry"
+version = "0.38.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6c938150bbecf4b43a24964bea0780f99d538b6654455e45b1784d410f122822"
+dependencies = [
+ "axum",
+ "futures-core",
+ "futures-util",
+ "http",
+ "opentelemetry",
+ "opentelemetry-semantic-conventions",
+ "pin-project-lite",
+ "tower",
+ "tracing",
+ "tracing-opentelemetry",
+ "tracing-opentelemetry-instrumentation-sdk",
+]
+
+[[package]]
 name = "base64"
 version = "0.22.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -274,6 +293,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "axum",
+ "axum-tracing-opentelemetry",
  "init-tracing-opentelemetry",
  "tokio",
  "tracing",
@@ -1833,6 +1853,19 @@ dependencies = [
  "tracing-log",
  "tracing-subscriber",
  "web-time",
+]
+
+[[package]]
+name = "tracing-opentelemetry-instrumentation-sdk"
+version = "0.38.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a10464b0f9cac62a3e26c08c7c9b93c5ae62f5165792b2e7e90c52940eaabef5"
+dependencies = [
+ "http",
+ "opentelemetry",
+ "opentelemetry-semantic-conventions",
+ "tracing",
+ "tracing-opentelemetry",
 ]
 
 [[package]]
