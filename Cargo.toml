@@ -9,6 +9,7 @@ axum = "0.8.9"
 axum-template = { version = "3.0.0", features = ["minijinja"] }
 axum-tracing-opentelemetry = "0.38.0"
 init-tracing-opentelemetry = { version = "0.38.1", features = ["logs", "otlp", "tracing_subscriber_ext"] }
+minijinja = "2.24.0"
 thiserror = "2.0.20"
 tokio = { version = "1.53.1", default-features = false, features = ["macros", "net", "rt-multi-thread"] }
 tracing = "0.1.44"

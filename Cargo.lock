@@ -334,6 +334,7 @@ dependencies = [
  "axum-tracing-opentelemetry",
  "exn",
  "init-tracing-opentelemetry",
+ "minijinja",
  "reqwest",
  "thiserror",
  "tokio",
