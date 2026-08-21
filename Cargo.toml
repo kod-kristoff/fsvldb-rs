@@ -11,10 +11,12 @@ axum-template = { version = "3.0.0", features = ["minijinja"] }
 axum-tracing-opentelemetry = "0.38.0"
 init-tracing-opentelemetry = { version = "0.38.1", features = ["logs", "otlp", "tracing_subscriber_ext"] }
 minijinja = "2.24.0"
+serde = { version = "1.0.229", features = ["derive"] }
 thiserror = "2.0.20"
 tokio = { version = "1.53.1", default-features = false, features = ["macros", "net", "rt-multi-thread"] }
 tracing = "0.1.44"
 
 [dev-dependencies]
 exn = "0.3.1"
+insta = "1.48.0"
 reqwest = "0.13.4"
