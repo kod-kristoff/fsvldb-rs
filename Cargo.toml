@@ -8,10 +8,10 @@ anyhow = "1.0.104"
 axum = "0.8.9"
 axum-tracing-opentelemetry = "0.38.0"
 init-tracing-opentelemetry = { version = "0.38.1", features = ["logs", "otlp", "tracing_subscriber_ext"] }
+thiserror = "2.0.20"
 tokio = { version = "1.53.1", default-features = false, features = ["macros", "net", "rt-multi-thread"] }
 tracing = "0.1.44"
 
 [dev-dependencies]
 exn = "0.3.1"
 reqwest = "0.13.4"
-thiserror = "2.0.20"
