@@ -2,10 +2,11 @@
 name = "fsvldb-rs"
 version = "0.1.0"
 edition = "2024"
+rust-version = "1.91.0"
 
 [dependencies]
 anyhow = "1.0.104"
-axum = "0.8.9"
+axum = { version = "0.8.9", features = ["macros"] }
 axum-template = { version = "3.0.0", features = ["minijinja"] }
 axum-tracing-opentelemetry = "0.38.0"
 init-tracing-opentelemetry = { version = "0.38.1", features = ["logs", "otlp", "tracing_subscriber_ext"] }
