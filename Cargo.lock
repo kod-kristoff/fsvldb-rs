@@ -302,6 +302,7 @@ dependencies = [
  "axum-tracing-opentelemetry",
  "exn",
  "init-tracing-opentelemetry",
+ "thiserror",
  "tokio",
  "tracing",
 ]
