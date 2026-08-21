@@ -1,0 +1,36 @@
+{% extends "layout.html" %} {% block body %}
+<section class="rowcontainer">
+    <div class="top">
+        <header><h1>FORNSVENSK LEXIKALISK DATABAS</h1></header>
+    </div>
+    <section class="colcontainer">
+        <div class="left">
+            <form>
+                <label for="word">UPPSLAGSORD</label><br />
+                <input type="text" id="word" name="word" value="{{ word }}" /><br />
+                <p>
+                    <label for="limit">MAX ANTAL TRÄFFAR</label>
+                    <select name="limit" id="limit">
+                        <option value="10">10</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                        <option value="200">200</option>
+                    </select>
+                    <input type="submit" value="SÖK" />
+                </p>
+            </form>
+            <p><a href="index2.html">Allt om Fornsvensk lexikalisk databas</a></p>
+        </div>
+        <div class="result"></div>
+    </section>
+    <div class="src"></div>
+</section>
+<!--<FRAMESET FRAMSPACING="0" ROWS=8%,84%,6% BORDER="2">
+<FRAME SRC="top.html" NAME="LIST">
+<FRAMESET FRAMSPACING="2" COLS=35%,65% BORDER="0">
+<FRAME SRC="left.html" NAME="TOP">
+<FRAME SRC="result.html" NAME="RESULT">
+</FRAMESET>
+<FRAME SRC="src.html" NAME="SRC">
+</FRAMESET>-->
+{% endblock %}

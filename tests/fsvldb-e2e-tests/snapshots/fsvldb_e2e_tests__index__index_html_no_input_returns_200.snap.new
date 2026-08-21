@@ -1,0 +1,22 @@
+---
+source: tests/fsvldb-e2e-tests/index.rs
+assertion_line: 21
+expression: html
+---
+<html>
+    <head>
+        <title>FORNSVENSK LEXIKALISK DATABAS</title>
+        <meta charset="utf-8" />
+    </head>
+
+    
+<FRAMESET FRAMSPACING="0" ROWS=8%,84%,6% BORDER="2">
+<FRAME SRC="top.html" NAME="LIST">
+<FRAMESET FRAMSPACING="2" COLS=35%,65% BORDER="0">
+<FRAME SRC="left.html" NAME="TOP">
+<FRAME SRC="result.html" NAME="RESULT">
+</FRAMESET>
+<FRAME SRC="src.html" NAME="SRC">
+</FRAMESET>
+
+</html>
