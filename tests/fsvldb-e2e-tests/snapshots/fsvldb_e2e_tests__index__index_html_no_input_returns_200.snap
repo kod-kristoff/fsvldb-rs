@@ -1,6 +1,5 @@
 ---
 source: tests/fsvldb-e2e-tests/index.rs
-assertion_line: 21
 expression: html
 ---
 <html>
